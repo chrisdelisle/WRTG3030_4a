@@ -1,0 +1,332 @@
+
+
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 60px;
+    background-color: #bdbfb2;
+    text-align: center;
+    padding-top: 10px;
+    /* padding-bottom: 10% vw; */
+    z-index: 4;
+    border-radius: 4px;
+    font-size: 1.8vw;
+
+}
+
+
+
+ /*TO DO: background repeating mirrors so it is seamless*/
+body{
+    /* background-image: url('../resources/img/background-image.jpeg'); */
+    background-image: url('../img/4a_background.jpg');
+    background-repeat: repeat-y;
+    background-position: absolute;
+    background-size: cover;
+    position: auto;
+  
+    
+}
+
+
+
+#mynav{
+    background-color: #bdbfb2;
+    font-size: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: gray;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    word-spacing: 10px;
+    border-radius: 4px;
+    z-index: 4;
+   
+}
+
+#icon{
+    position: absolute; right: 5%; 
+    padding-top: .5%;
+}
+
+/*.grid-container{
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+     display: flex;
+    grid-gap: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    
+}*/
+
+
+
+.c-item{
+    height: 480px;
+
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.carousel-indicators{
+    background-color: rgba(45, 45, 45, 0.85);
+  
+}
+
+.carousel-caption
+{
+    background-color: rgba(45, 45, 45, .85);
+   
+    
+}
+
+.carousel-text
+{
+    color: white;
+    opacity: 1;
+}
+
+
+td{
+    background-color: white;
+}
+
+
+
+
+@keyframes fade-inout{
+    0%{ opacity: 1;}
+    100%{opacity: 0;} 
+}
+
+
+/* self portrait */
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(50px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes imageSlide{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes selfDescSlide{
+    from{
+        transform: translateY(-400px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+/*Hobby card animation*/
+@keyframes mountainSlide{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+/*Hobby card animation*/
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* home page */
+#self-desc{
+    text-align: left;
+    font-size: 1.4vw;
+
+   animation-name: selfDescSlide;
+   animation-duration: 1s;
+   animation-timing-function: ease-out forwards;
+   animation-delay: 0s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: none;
+
+
+   z-index: 1;
+   position: relative;
+   color: black;
+   opacity: 1;
+}
+
+#self-image
+{
+    z-index:2;
+    position: relative;
+    
+    animation-name: imageSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
+}
+#selfImageSize{
+    width: 35vw;
+    border-radius: 6px;
+}
+ */ */
+
+#intro_text{
+
+color: rgb(54, 54, 234);
+
+
+}
+
+
+#sss{
+    display:grid;
+    padding: 0px 0px;
+   
+    grid-template-columns: 1% 40%;
+    grid-gap: 40%;
+    padding-bottom: 9%;
+
+} 
+
+
+
+
+
+.grid-item{
+    text-align: left;
+    /* padding: 20px; */
+    opacity: 1.0;
+   padding-left: 10vw;
+   
+   
+} 
+
+#hobbies-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+     
+    grid-gap: 4vw;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 7%;
+    align-items: center; 
+
+
+   
+}
+
+
+#snowmobileImage{
+    width: 25vw;
+    border-radius: 2px;
+}
+
+
+#hobby-card-1{
+    border-style: solid;
+    border-radius: 6px;
+    border-color:#2a2a2a;
+    text-align: center;
+
+    font-size: 1.7vw;
+    background-color: #fce4ca;
+
+   
+    z-index:1;
+    /* position: relative; */
+
+    animation-name: mountainSlide;
+    animation-duration: .75s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
+    
+
+}
+
+
+#hobby-card-2{
+    border-style: solid;
+    border-radius: 6px;
+    border-color:#2a2a2a;
+    text-align: center;
+  
+    font-size: 1.7vw;
+    background-color: #fce4ca;
+    z-index: 2;
+
+    
+}
+#codingImage{
+    width: 30vw;
+    border-radius: 2px;
+}
+
+#hobby-card-3{
+    border-style: solid;
+    border-radius: 6px;
+    border-color:#2a2a2a;
+    text-align: center;
+    
+    font-size: 1.7vw;
+    background-color: #fce4ca;
+
+    z-index:1;
+    /* position: relative; */
+
+    animation-name: slideInLeft;
+    animation-duration: .75s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
+    
+}
+#bikingImage{
+    width: 25vw;
+    border-radius: 2px;
+}
+
