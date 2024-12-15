@@ -42,7 +42,9 @@ body{
 
 #government_body{
     /* background-image: url('../resources/img/background-image.jpeg'); */
-    background-image: url('../img/governmentbg.jpeg');
+    background-image: 
+    linear-gradient(to right, rgba(183, 8, 31, 0.3) 55%, rgba(110, 10, 173, 0.2) 80%), 
+    url('../img/governmentbg.jpeg');
     /* background-repeat:unset; */
     /* background-position:center; */
     background-size: cover;
@@ -51,22 +53,20 @@ body{
     
 }
 
+#role_body{
+    /* background-image: url('../resources/img/background-image.jpeg'); */
+    background-image: 
+    linear-gradient(to right, rgba(45, 6, 114, 0.9) 48%, rgba(110, 10, 173, 0) 80%), 
+    url('../img/univ.jpg');
+    /* background-repeat:unset; */
+    /* background-position:center; */
+    background-size: cover;
+    position: auto;
 
+  
+    
+}
 
-/* #mynav{
-    background-color: #5c52eb;
-    font-size: 17px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 2px;
-    border-color: gray;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-    word-spacing: 10px;
-    border-radius: 4px;
-    z-index: 4;
-   
-} */
 
 #icon{
     position: absolute; right: 5%; 
@@ -198,6 +198,9 @@ td{
    opacity: 1;
 }
 
+
+
+
 #intro_left
 {
     z-index:2;
@@ -215,9 +218,16 @@ td{
     font-size: 7vw;
     opacity: 1;
     line-height: .4em;
-    
-    
+
 }
+
+
+
+
+
+
+
+
 #audience_text{
     font-size: .4em;
     white-space: nowrap;
@@ -288,11 +298,58 @@ color: #ffffff;
     
 }
 
+@keyframes leftGovernmentSlide{
+    from{
+        transform: translateX(80px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
 #left_government{
     color: black;
     padding-top: 3.5vw;
     font-size: 1.4vw;
+    animation-name: leftGovernmentSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
 }
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#right_government{
+    z-index:1;
+    /* position: relative; */
+
+    animation-name: slideInLeft;
+    animation-duration: .75s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
+}
+
+
 #questions{
     font-size: .2em;
     white-space: nowrap;
@@ -309,4 +366,53 @@ color: #ffffff;
     font-size: .2em;
     white-space: nowrap;
     color:rgb(220, 220, 186);
+}
+
+#role_grid{
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    
+}
+
+
+#left_role{
+    color: white;
+    padding-top: 3.5vw;
+    font-size: 1.4vw;
+    animation-name: leftGovernmentSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
+}
+
+a:visited{
+    color: white;
+
+}
+
+
+#right_role{
+    z-index:1;
+    /* position: relative; */
+
+    animation-name: slideInLeft;
+    animation-duration: .75s;
+    animation-timing-function: ease-out forwards;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode:none;
+
+    transform: translateX(0px);
+    
+    opacity: 1;
 }
