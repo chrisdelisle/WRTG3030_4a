@@ -20,9 +20,27 @@ footer{
  /*TO DO: background repeating mirrors so it is seamless*/
 body{
     /* background-image: url('../resources/img/background-image.jpeg'); */
-    background-image: url('../img/4a_background.jpg');
+    /* background-image: url('../img/4a_background.jpg');  */
+
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0) 35%, rgb(8, 0, 23) 60%), 
+        url('../img/4a_background.jpg'); 
+
+
     background-repeat: repeat-y;
     background-position: absolute;
+    background-size: cover;
+    position: auto;
+    background-image: linear-gradient(right, black, url('../img/4a_background.jpg'));
+  
+    
+}
+
+#government_body{
+    /* background-image: url('../resources/img/background-image.jpeg'); */
+    background-image: url('../img/governmentbg.jpeg');
+    /* background-repeat:unset; */
+    /* background-position:center; */
     background-size: cover;
     position: auto;
   
@@ -217,8 +235,8 @@ color: #ffffff;
     display:grid;
     padding: 0px 0px;
    
-    grid-template-columns: 1% 40%;
-    grid-gap: 50%;
+    grid-template-columns: 0% 45%;
+    grid-gap: 48%;
     padding-bottom: 9%;
 
 } 
@@ -336,3 +354,28 @@ color: #ffffff;
     border-radius: 2px;
 }
 
+
+#option_grid{
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    
+
+}
+
+
+
+
+#government_grid{
+    color: white;
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+
+#left_government{
+    color: black;
+    padding-top: 3vw;
+
+
+}
