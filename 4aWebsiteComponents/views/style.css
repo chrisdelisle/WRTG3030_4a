@@ -1,6 +1,6 @@
 
 
-footer{
+/*footer{
     position: fixed;
     bottom:0;
     width: 100%;
@@ -8,12 +8,17 @@ footer{
     background-color: #202043;
     text-align: center;
     padding-top: 10px;
-    /* padding-bottom: 10% vw; */
+   
     z-index: 4;
     border-radius: 4px;
     font-size: 1.8vw;
 
-} 
+} */
+
+html {
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -21,19 +26,18 @@ footer{
 body{
     /* background-image: url('../resources/img/background-image.jpeg'); */
     /* background-image: url('../img/4a_background.jpg');  */
-
     background-image: 
         linear-gradient(to right, rgba(255, 255, 255, 0) 35%, rgb(8, 0, 23) 60%), 
         url('../img/4a_background.jpg'); 
 
-
+    
     background-repeat: repeat-y;
     background-position: absolute;
     background-size: cover;
     position: auto;
     background-image: linear-gradient(right, black, url('../img/4a_background.jpg'));
   
-    
+    min-height: 100vh; /* Makes the body span the full viewport height */
 }
 
 #government_body{
@@ -49,7 +53,7 @@ body{
 
 
 
-#mynav{
+/* #mynav{
     background-color: #5c52eb;
     font-size: 17px;
     border-width: 1px;
@@ -62,7 +66,7 @@ body{
     border-radius: 4px;
     z-index: 4;
    
-}
+} */
 
 #icon{
     position: absolute; right: 5%; 
@@ -210,11 +214,15 @@ td{
     transform: translateX(0px);
     font-size: 7vw;
     opacity: 1;
-    line-height: .5em;
+    line-height: .4em;
+    
     
 }
 #audience_text{
-    font-size: .3em;
+    font-size: .4em;
+    white-space: nowrap;
+    margin-top: -5vw;
+
 }
 
 
@@ -237,7 +245,7 @@ color: #ffffff;
    
     grid-template-columns: 0% 45%;
     grid-gap: 48%;
-    padding-bottom: 9%;
+
 
 } 
 
@@ -254,105 +262,11 @@ color: #ffffff;
    
 } 
 
-#hobbies-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    justify-content: space-evenly;
-    text-align: center;
-     
-    grid-gap: 4vw;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-bottom: 7%;
-    align-items: center; 
 
 
-   
-}
 
 
-#snowmobileImage{
-    width: 25vw;
-    border-radius: 2px;
-}
 
-
-#hobby-card-1{
-    border-style: solid;
-    border-radius: 6px;
-    border-color:#2a2a2a;
-    text-align: center;
-
-    font-size: 1.7vw;
-    background-color: #fce4ca;
-
-   
-    z-index:1;
-    /* position: relative; */
-
-    animation-name: mountainSlide;
-    animation-duration: .75s;
-    animation-timing-function: ease-out forwards;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-
-    transform: translateX(0px);
-    
-    opacity: 1;
-    
-
-}
-
-
-#hobby-card-2{
-    border-style: solid;
-    border-radius: 6px;
-    border-color:#2a2a2a;
-    text-align: center;
-  
-    font-size: 1.7vw;
-    background-color: #fce4ca;
-    z-index: 2;
-
-    
-}
-#codingImage{
-    width: 30vw;
-    border-radius: 2px;
-}
-
-#hobby-card-3{
-    border-style: solid;
-    border-radius: 6px;
-    border-color:#2a2a2a;
-    text-align: center;
-    
-    font-size: 1.7vw;
-    background-color: #fce4ca;
-
-    z-index:1;
-    /* position: relative; */
-
-    animation-name: slideInLeft;
-    animation-duration: .75s;
-    animation-timing-function: ease-out forwards;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode:none;
-
-    transform: translateX(0px);
-    
-    opacity: 1;
-    
-}
-#bikingImage{
-    width: 25vw;
-    border-radius: 2px;
-}
 
 
 #option_grid{
@@ -370,12 +284,29 @@ color: #ffffff;
     color: white;
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
     
 }
 
 #left_government{
     color: black;
-    padding-top: 3vw;
+    padding-top: 3.5vw;
+    font-size: 1.4vw;
+}
+#questions{
+    font-size: .2em;
+    white-space: nowrap;
+    color: white;
+}
 
+#government_link_text{
+    font-size: .2em;
+    white-space: nowrap;
+    color:rgb(220, 220, 186);
+}
 
+#role_link_text{
+    font-size: .2em;
+    white-space: nowrap;
+    color:rgb(220, 220, 186);
 }
